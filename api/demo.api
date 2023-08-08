@@ -1,0 +1,13 @@
+// TODO: 重命名文件
+syntax = "v1"
+
+info (
+	title:   "Demo系统"
+	desc:    "Demo系统"
+	author:  "bineanshi@163.com"
+	version: "v1"
+)
+
+import (
+	"desc/test.api"
+)

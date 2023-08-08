@@ -1,0 +1,28 @@
+// TODO: 修改文件
+syntax = "v1"
+
+info (
+  title:   "Test"
+  desc:    "Test"
+  author:  "bineanshi@163.com"
+  version: "v1"
+)
+
+type (
+  Ping struct {
+
+  }
+  Pong struct {
+    Message string `json:"message"`
+  }
+)
+
+@server(
+  prefix: api/ping
+  group: Test
+)
+service TestApi {
+  @doc "Ping"
+  @handler PingHandle
+  get /ping (Ping) returns (Pong)
+}

@@ -1,0 +1,12 @@
+// TODO: 文件重命名
+syntax = "proto3";
+
+package demo;
+option go_package = "./demo";
+
+message DemoReq{}
+message DemoResp{}
+
+service DemoService{
+  rpc DemoInfo(DemoReq) returns (DemoResp);
+}
