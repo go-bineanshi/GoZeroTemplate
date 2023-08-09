@@ -3,7 +3,7 @@ module github.com/go-bineanshi/GoZeroTemplate
 go 1.20
 
 require (
-	github.com/go-bineanshi/CommonTool v1.0.0
+	github.com/go-bineanshi/CommonTool v1.0.2
 	github.com/zeromicro/go-zero v1.5.4
 )
 
